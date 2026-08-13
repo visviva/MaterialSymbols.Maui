@@ -1,3 +1,4 @@
+[![CI](https://github.com/visviva/MaterialSymbols.Maui/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/visviva/MaterialSymbols.Maui/actions/workflows/ci.yml)
 # MaterialSymbols.Maui
 
 Modern Google Material Symbols for .NET MAUI with named XAML and C# APIs. The package includes
