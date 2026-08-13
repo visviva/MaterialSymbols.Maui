@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="assets/materialsymbols-maui-banner.svg"
+    src="assets/banner.svg"
     alt="MaterialSymbols.Maui — Modern Google Material Symbols for .NET MAUI"
     width="100%"
   />
