@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="assets/materialsymbols-maui-banner.svg"
+    alt="MaterialSymbols.Maui — Modern Google Material Symbols for .NET MAUI"
+    width="100%"
+  />
+</p>
+
 [![CI](https://github.com/visviva/MaterialSymbols.Maui/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/visviva/MaterialSymbols.Maui/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/MaterialSymbols.Maui.svg)](https://www.nuget.org/packages/MaterialSymbols.Maui)
 
