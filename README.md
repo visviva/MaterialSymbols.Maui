@@ -1,13 +1,26 @@
 [![CI](https://github.com/visviva/MaterialSymbols.Maui/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/visviva/MaterialSymbols.Maui/actions/workflows/ci.yml)
+[![NuGet](https://img.shields.io/nuget/v/MaterialSymbols.Maui.svg)](https://www.nuget.org/packages/MaterialSymbols.Maui)
+
 # MaterialSymbols.Maui
 
 Modern Google Material Symbols for .NET MAUI with named XAML and C# APIs. The package includes
-Outlined, Rounded, and Sharp designs, each in outlined and filled form.
+Outlined, Rounded, and Sharp designs, each in outlined and filled form. It is available from
+[NuGet.org](https://www.nuget.org/packages/MaterialSymbols.Maui).
+
+See the
+[documentation](https://github.com/visviva/MaterialSymbols.Maui/blob/main/doc/README.md) for
+detailed usage, API, architecture, packaging, and maintenance guides.
 
 ## Installation
 
 ```powershell
-dotnet add package MaterialSymbols.Maui
+dotnet add package MaterialSymbols.Maui --version 1.0.0
+```
+
+Or add the package reference directly to your MAUI project:
+
+```xml
+<PackageReference Include="MaterialSymbols.Maui" Version="1.0.0" />
 ```
 
 Register the fonts in `MauiProgram.cs`:
@@ -70,9 +83,10 @@ variable font axes is intentionally outside the initial package API.
 
 ## Demo
 
-The [`examples/MaterialSymbols.Maui.Demo`](examples/MaterialSymbols.Maui.Demo) app demonstrates
-symbols in a Shell app bar and on its main page. Open `MaterialSymbols.Maui.slnx` in Visual Studio
-and set the demo as the startup project.
+The
+[`examples/MaterialSymbols.Maui.Demo`](https://github.com/visviva/MaterialSymbols.Maui/tree/main/examples/MaterialSymbols.Maui.Demo)
+app demonstrates symbols in a Shell app bar and on its main page. Open `MaterialSymbols.Maui.slnx`
+in Visual Studio and set the demo as the startup project.
 
 ## Licensing
 

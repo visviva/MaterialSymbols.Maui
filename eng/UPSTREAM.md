@@ -12,11 +12,11 @@ the official codepoint list, verifies their SHA-256 hashes, and produces fixed i
 - grade: 0
 - fill: 0 or 1
 
-Install the pinned requirements and run the generator from this directory:
+Install the pinned requirements and run the generator from the repository root:
 
 ```powershell
-python -m pip install -r requirements.txt
-python generate_material_symbols.py
+python -m pip install -r eng/requirements.txt
+python eng/generate_material_symbols.py --project-root src/MaterialSymbols.Maui
 ```
 
 Google's fonts and generated derivatives are licensed under Apache License 2.0.
