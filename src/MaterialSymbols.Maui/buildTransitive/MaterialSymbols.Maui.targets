@@ -1,0 +1,28 @@
+<Project>
+  <ItemGroup Condition="'$(UseMaui)' == 'true'">
+    <MauiFont
+      Include="$(MSBuildThisFileDirectory)Fonts\MaterialSymbolsOutlined-Regular.ttf"
+      Alias="MaterialSymbolsOutlined"
+    />
+    <MauiFont
+      Include="$(MSBuildThisFileDirectory)Fonts\MaterialSymbolsOutlinedFilled-Regular.ttf"
+      Alias="MaterialSymbolsOutlinedFilled"
+    />
+    <MauiFont
+      Include="$(MSBuildThisFileDirectory)Fonts\MaterialSymbolsRounded-Regular.ttf"
+      Alias="MaterialSymbolsRounded"
+    />
+    <MauiFont
+      Include="$(MSBuildThisFileDirectory)Fonts\MaterialSymbolsRoundedFilled-Regular.ttf"
+      Alias="MaterialSymbolsRoundedFilled"
+    />
+    <MauiFont
+      Include="$(MSBuildThisFileDirectory)Fonts\MaterialSymbolsSharp-Regular.ttf"
+      Alias="MaterialSymbolsSharp"
+    />
+    <MauiFont
+      Include="$(MSBuildThisFileDirectory)Fonts\MaterialSymbolsSharpFilled-Regular.ttf"
+      Alias="MaterialSymbolsSharpFilled"
+    />
+  </ItemGroup>
+</Project>

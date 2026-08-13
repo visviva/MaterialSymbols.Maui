@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MaterialSymbols.Maui.Demo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MaterialSymbols.Maui.Demo"
+    xmlns:symbols="http://schemas.materialsymbols.maui/2026/xaml"
+    Title="Material Symbols Demo"
+    FlyoutBehavior="Disabled"
+    Shell.BackgroundColor="#6750A4"
+    Shell.ForegroundColor="White"
+    Shell.TitleColor="White">
+
+    <ShellContent
+        Title="Material Symbols"
+        Icon="{symbols:Symbol Home, Variant=Rounded, Filled=True}"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>

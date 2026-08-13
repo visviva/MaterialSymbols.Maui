@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MaterialSymbols.Maui</RootNamespace>
+    <AssemblyName>MaterialSymbols.Maui</AssemblyName>
+
+    <IsPackable>true</IsPackable>
+    <PackageId>MaterialSymbols.Maui</PackageId>
+    <Version>0.1.0-preview.1</Version>
+    <Authors>Simon Lauser</Authors>
+    <Title>Material Symbols for .NET MAUI</Title>
+    <Description>Google Material Symbols for .NET MAUI with named XAML and C# APIs, including Outlined, Rounded, Sharp, and filled variants.</Description>
+    <PackageTags>maui;icons;material-symbols;material-design;google;xaml</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Initial preview with 4,000+ named Material Symbols and six fixed font variants.</PackageReleaseNotes>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts\packages</PackageOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None
+      Update="Resources\Fonts\*.ttf"
+      Pack="true"
+      PackagePath="buildTransitive\Fonts\%(Filename)%(Extension)"
+    />
+    <None
+      Update="buildTransitive\MaterialSymbols.Maui.targets"
+      Pack="true"
+      PackagePath="buildTransitive\MaterialSymbols.Maui.targets"
+    />
+    <None Include="..\..\README.md" Link="README.md" Pack="true" PackagePath="" />
+    <None
+      Include="..\..\THIRD-PARTY-NOTICES.md"
+      Link="THIRD-PARTY-NOTICES.md"
+      Pack="true"
+      PackagePath=""
+    />
+    <None
+      Include="..\..\licenses\Apache-2.0.txt"
+      Link="licenses\Apache-2.0.txt"
+      Pack="true"
+      PackagePath="licenses"
+    />
+    <None Include="..\..\LICENSE" Link="LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>

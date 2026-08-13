@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MaterialSymbols.Maui.Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:symbols="http://schemas.materialsymbols.maui/2026/xaml"
+    Title="Material Symbols">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Search"
+            IconImageSource="{symbols:Symbol Search, Variant=Rounded}" />
+        <ToolbarItem
+            Text="Favorite"
+            IconImageSource="{symbols:Symbol Favorite, Filled=True}" />
+        <ToolbarItem
+            Text="Settings"
+            IconImageSource="{symbols:Symbol Settings, Variant=Sharp}" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="24">
+            <Label
+                FontAttributes="Bold"
+                FontSize="28"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="One symbol, six styles" />
+
+            <Label
+                FontSize="16"
+                Text="Use named Material Symbols from XAML or C#."
+                TextColor="#625B71" />
+
+            <Grid
+                ColumnDefinitions="*,*,*"
+                ColumnSpacing="12"
+                RowDefinitions="Auto,Auto"
+                RowSpacing="12">
+
+                <Border Padding="12" Stroke="#CAC4D0" StrokeShape="RoundRectangle 16">
+                    <VerticalStackLayout Spacing="8">
+                        <symbols:MaterialSymbolIcon
+                            FontSize="40"
+                            Icon="Home"
+                            TextColor="#6750A4" />
+                        <Label HorizontalTextAlignment="Center" Text="Outlined" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="1" Padding="12" Stroke="#CAC4D0" StrokeShape="RoundRectangle 16">
+                    <VerticalStackLayout Spacing="8">
+                        <symbols:MaterialSymbolIcon
+                            FontSize="40"
+                            Icon="Home"
+                            TextColor="#6750A4"
+                            Variant="Rounded" />
+                        <Label HorizontalTextAlignment="Center" Text="Rounded" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="2" Padding="12" Stroke="#CAC4D0" StrokeShape="RoundRectangle 16">
+                    <VerticalStackLayout Spacing="8">
+                        <symbols:MaterialSymbolIcon
+                            FontSize="40"
+                            Icon="Home"
+                            TextColor="#6750A4"
+                            Variant="Sharp" />
+                        <Label HorizontalTextAlignment="Center" Text="Sharp" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Padding="12" Stroke="#CAC4D0" StrokeShape="RoundRectangle 16">
+                    <VerticalStackLayout Spacing="8">
+                        <symbols:MaterialSymbolIcon
+                            Filled="True"
+                            FontSize="40"
+                            Icon="Home"
+                            TextColor="#6750A4" />
+                        <Label HorizontalTextAlignment="Center" Text="Filled" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="1" Padding="12" Stroke="#CAC4D0" StrokeShape="RoundRectangle 16">
+                    <VerticalStackLayout Spacing="8">
+                        <symbols:MaterialSymbolIcon
+                            Filled="True"
+                            FontSize="40"
+                            Icon="Home"
+                            TextColor="#6750A4"
+                            Variant="Rounded" />
+                        <Label FontSize="12" HorizontalTextAlignment="Center" Text="Rounded filled" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="2" Padding="12" Stroke="#CAC4D0" StrokeShape="RoundRectangle 16">
+                    <VerticalStackLayout Spacing="8">
+                        <symbols:MaterialSymbolIcon
+                            Filled="True"
+                            FontSize="40"
+                            Icon="Home"
+                            TextColor="#6750A4"
+                            Variant="Sharp" />
+                        <Label FontSize="12" HorizontalTextAlignment="Center" Text="Sharp filled" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Markup extensions" />
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="24">
+                <Image
+                    HeightRequest="48"
+                    Source="{symbols:Symbol CalendarMonth, Variant=Rounded, Size=48, Color=#006A6A}"
+                    WidthRequest="48" />
+                <Image
+                    HeightRequest="48"
+                    Source="{symbols:Symbol Notifications, Filled=True, Size=48, Color=#B3261E}"
+                    WidthRequest="48" />
+                <Image
+                    HeightRequest="48"
+                    Source="{symbols:Symbol Cloud, Variant=Sharp, Size=48, Color=#386A20}"
+                    WidthRequest="48" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

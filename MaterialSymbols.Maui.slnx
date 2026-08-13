@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/examples/">
+    <Project Path="examples/MaterialSymbols.Maui.Demo/MaterialSymbols.Maui.Demo.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/MaterialSymbols.Maui/MaterialSymbols.Maui.csproj" />
+  </Folder>
+</Solution>
